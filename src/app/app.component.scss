@@ -2,3 +2,38 @@
   background-color: cadetblue;
   height: 100rem;
 }
+
+.content {
+  animation: colorEffect 2s linear;
+  background-color: darkblue;
+  height: 20rem;
+}
+
+.content.inactive {
+  animation: inactiveColorEffect 1s linear;
+  background-color: darkgreen;
+}
+
+@keyframes colorEffect {
+  from {
+    background-color: darkgreen;
+  }
+  50% {
+    background-color: darkred;
+  }
+  to {
+    background-color: darkblue;
+  }
+}
+
+@keyframes inactiveColorEffect {
+  from {
+    background-color: darkblue;
+  }
+  50% {
+    background-color: darkred;
+  }
+  to {
+    background-color: darkgreen;
+  }
+}
