@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ScrollTriggerDirective } from './scroll-trigger.directive';
+import { ScrollTriggerComponent } from './scroll-trigger.component';
 
 
 
 @NgModule({
   declarations: [
+    ScrollTriggerComponent,
     ScrollTriggerDirective
   ],
   exports: [
@@ -14,6 +16,9 @@ import { ScrollTriggerDirective } from './scroll-trigger.directive';
   ],
   imports: [
     CommonModule
+  ],
+  entryComponents: [
+    ScrollTriggerComponent
   ]
 })
 export class ScrollTriggerModule { }

@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ScrollTriggerDirective } from './scroll-trigger.directive';
+import { ScrollTriggerModule } from './shared/scroll-trigger/scroll-trigger.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ScrollTriggerDirective
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScrollTriggerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
